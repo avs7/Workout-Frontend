@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch('/api/workouts', {
-        //sending auth header to be used in backend middleware
+        //sending auth header to be used in backend middleware f
         headers: { Authorization: `Bearer ${user.token}` },
       })
       const json = await response.json()
